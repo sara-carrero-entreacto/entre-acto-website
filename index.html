@@ -82,6 +82,7 @@
             <a href="#about" class="hover:text-studio-accent transition-colors">Filosofía</a>
             <a href="#services" class="hover:text-studio-accent transition-colors">Servicios</a>
             <a href="#method" class="hover:text-studio-accent transition-colors">Metodología</a>
+            <a href="#contact" class="hover:text-studio-accent transition-colors">Contacto</a>
         </div>
     </nav>
 
@@ -100,7 +101,7 @@
                 Somos el puente humano entre tu estrategia de marca y una ejecución impecable. Devolvemos la calma a tu equipo asumiendo la complejidad operativa.
             </p>
             <div class="animate-slide-up" style="animation-delay: 0.4s;">
-                <a href="#" class="inline-block px-10 py-4 bg-white text-studio-dark font-medium tracking-wide uppercase text-sm hover:bg-studio-accent hover:text-white transition-all duration-500 rounded-full">
+                <a href="#contact" class="inline-block px-10 py-4 bg-white text-studio-dark font-medium tracking-wide uppercase text-sm hover:bg-studio-accent hover:text-white transition-all duration-500 rounded-full">
                     Agendar Diagnóstico de Visión
                 </a>
             </div>
@@ -268,7 +269,56 @@
         </div>
     </section>
 
-    <!-- 7. Footer CTA -->
+    <!-- 7. Contact Section -->
+    <section id="contact" class="py-24 md:py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-studio-accent uppercase tracking-widest text-sm font-semibold mb-4 block">Contacto</span>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-6">Comencemos a Orquestar</h2>
+                    <div class="w-20 h-1 bg-studio-accent mx-auto"></div>
+                </div>
+
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-8">
+                    <!-- Honeypot field for spam prevention -->
+                    <p class="hidden">
+                        <label>No llenar si eres humano: <input name="bot-field" /></label>
+                    </p>
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <div>
+                        <label for="nombre" class="block text-sm uppercase tracking-widest text-studio-muted mb-3">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required
+                            class="w-full px-0 py-4 bg-transparent border-0 border-b border-black/10 focus:border-studio-accent focus:ring-0 text-lg font-light placeholder:text-studio-muted/50 transition-colors"
+                            placeholder="Tu nombre completo">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm uppercase tracking-widest text-studio-muted mb-3">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-0 py-4 bg-transparent border-0 border-b border-black/10 focus:border-studio-accent focus:ring-0 text-lg font-light placeholder:text-studio-muted/50 transition-colors"
+                            placeholder="tu@email.com">
+                    </div>
+
+                    <div>
+                        <label for="vision" class="block text-sm uppercase tracking-widest text-studio-muted mb-3">Cuéntanos sobre tu visión</label>
+                        <textarea id="vision" name="vision" rows="4" required
+                            class="w-full px-0 py-4 bg-transparent border-0 border-b border-black/10 focus:border-studio-accent focus:ring-0 text-lg font-light placeholder:text-studio-muted/50 transition-colors resize-none"
+                            placeholder="Describe tu proyecto o evento..."></textarea>
+                    </div>
+
+                    <div class="pt-6 text-center">
+                        <button type="submit"
+                            class="inline-block px-12 py-5 bg-studio-dark text-white font-medium tracking-[0.15em] uppercase text-sm hover:bg-studio-accent transition-all duration-500 rounded-full">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer CTA -->
     <section class="py-32 bg-studio-dark text-white text-center relative overflow-hidden">
         <!-- Decoration -->
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-transparent to-studio-accent"></div>
